@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Indah Lutfiyatul Mursyidah</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#7dd3fc", // sky-300 (Warna Utama)
+              primaryDark: "#0ea5e9", // sky-500 (Untuk hover/text gelap)
+              accent: "#f0f9ff", // sky-50 (Background section)
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans text-gray-700 bg-white">
+    <nav
+      class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-sky-100"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <a
+            href="#"
+            class="text-xl font-bold text-gray-800 hover:text-primaryDark transition"
+          >
+            Indah<span class="text-sky-400">.LM</span>
+          </a>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-600 hover:text-primaryDark font-medium"
+              >Beranda</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-gray-600 hover:text-primaryDark font-medium"
+              >Tentang</a
+            >
+            <a
+              href="#publications"
+              class="nav-link text-gray-600 hover:text-primaryDark font-medium"
+              >Publikasi</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-600 hover:text-primaryDark font-medium"
+              >Kontak</a
+            >
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-600 hover:text-primaryDark focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100"
+      >
+        <a href="#home" class="block py-2 px-4 text-sm hover:bg-sky-50"
+          >Beranda</a
+        >
+        <a href="#about" class="block py-2 px-4 text-sm hover:bg-sky-50"
+          >Tentang</a
+        >
+        <a href="#publications" class="block py-2 px-4 text-sm hover:bg-sky-50"
+          >Publikasi</a
+        >
+        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-sky-50"
+          >Kontak</a
+        >
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="pt-32 pb-20 px-4 bg-gradient-to-br from-sky-50 via-white to-sky-100"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10"
+      >
+        <div class="md:w-1/2 text-center md:text-left fade-in-up">
+          <span
+            class="inline-block py-1 px-3 rounded-full bg-sky-200 text-sky-800 text-sm font-semibold mb-4"
+          >
+            Mathematics Education & Graph Theory
+          </span>
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            Indah Lutfiyatul <br /><span class="text-sky-400">Mursyidah</span>
+          </h1>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Peneliti dan pendidik yang berafiliasi dengan
+            <strong>PUI-PT Combinatorics and Graph (CGANT)</strong>, Universitas
+            Jember. Fokus pada pengembangan Matematika, Kriptografi, dan STEM
+            Education.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="#contact"
+              class="px-8 py-3 bg-primary hover:bg-primaryDark text-white font-semibold rounded-lg shadow-lg shadow-sky-200 transition transform hover:-translate-y-1"
+            >
+              Hubungi Saya
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=ffU-LyEAAAAJ&hl=id"
+              target="_blank"
+              class="px-8 py-3 border-2 border-primary text-primaryDark font-semibold rounded-lg hover:bg-sky-50 transition"
+            >
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div
+          class="md:w-1/2 flex justify-center fade-in-up"
+          style="animation-delay: 0.2s"
+        >
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <div
+              class="absolute inset-0 bg-sky-300 rounded-full blur-2xl opacity-30 animate-pulse"
+            ></div>
+            <img
+              src="foto-indah.jpg"
+              alt="Indah Lutfiyatul Mursyidah"
+              class="relative w-full h-full object-cover object-top rounded-full border-4 border-white shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div
+            class="p-6 bg-sky-50 rounded-2xl border border-sky-100 text-center hover:shadow-md transition"
+          >
+            <i
+              class="fa-solid fa-graduation-cap text-4xl text-sky-400 mb-4"
+            ></i>
+            <h3 class="text-3xl font-bold text-gray-800">5</h3>
+            <p class="text-gray-600">h-index (Scholar)</p>
+          </div>
+          <div
+            class="p-6 bg-sky-50 rounded-2xl border border-sky-100 text-center hover:shadow-md transition"
+          >
+            <i class="fa-solid fa-quote-right text-4xl text-sky-400 mb-4"></i>
+            <h3 class="text-3xl font-bold text-gray-800">79+</h3>
+            <p class="text-gray-600">Total Sitasi</p>
+          </div>
+          <div
+            class="p-6 bg-sky-50 rounded-2xl border border-sky-100 text-center hover:shadow-md transition"
+          >
+            <i class="fa-solid fa-file-lines text-4xl text-sky-400 mb-4"></i>
+            <h3 class="text-3xl font-bold text-gray-800">30+</h3>
+            <p class="text-gray-600">Dokumen Terindeks</p>
+          </div>
+        </div>
+
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Minat Penelitian
+          </h2>
+          <div class="flex flex-wrap justify-center gap-3">
+            <span
+              class="px-4 py-2 bg-white border border-sky-200 rounded-full text-gray-600 shadow-sm"
+              >Graph Theory</span
+            >
+            <span
+              class="px-4 py-2 bg-white border border-sky-200 rounded-full text-gray-600 shadow-sm"
+              >Mathematics Education</span
+            >
+            <span
+              class="px-4 py-2 bg-white border border-sky-200 rounded-full text-gray-600 shadow-sm"
+              >STEM Education</span
+            >
+            <span
+              class="px-4 py-2 bg-white border border-sky-200 rounded-full text-gray-600 shadow-sm"
+              >Cryptography</span
+            >
+            <span
+              class="px-4 py-2 bg-white border border-sky-200 rounded-full text-gray-600 shadow-sm"
+              >Neural Networks (LSTM)</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+          Publikasi Terpilih
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-sky-300 transition group"
+          >
+            <span
+              class="text-xs font-bold text-sky-500 uppercase tracking-wider"
+              >2025</span
+            >
+            <h3
+              class="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-sky-600 transition"
+            >
+              Leveraging LSTM and Dominating Sets for Precise NPK Nutrient
+              Forecasting in Agriculture
+            </h3>
+            <p class="text-sm text-gray-500 mb-4">
+              IAENG International Journal of Computer Science
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >Machine Learning</span
+              >
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >Agriculture</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-sky-300 transition group"
+          >
+            <span
+              class="text-xs font-bold text-sky-500 uppercase tracking-wider"
+              >2025</span
+            >
+            <h3
+              class="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-sky-600 transition"
+            >
+              Enhancing Text Encryption and Secret Document Watermarking through
+              Hyperladder Graph-Based Keystream
+            </h3>
+            <p class="text-sm text-gray-500 mb-4">
+              Statistics, Optimization & Information Computing
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >Cryptography</span
+              >
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >Graph Theory</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-sky-300 transition group"
+          >
+            <span
+              class="text-xs font-bold text-sky-500 uppercase tracking-wider"
+              >2024</span
+            >
+            <h3
+              class="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-sky-600 transition"
+            >
+              On b-Coloring Analysis of Graphs: An Application to
+              Spatial-Temporal Graph Neural Networks
+            </h3>
+            <p class="text-sm text-gray-500 mb-4">
+              European Journal of Pure and Applied Mathematics
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >Graph Neural Networks</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-sky-300 transition group"
+          >
+            <span
+              class="text-xs font-bold text-sky-500 uppercase tracking-wider"
+              >2024</span
+            >
+            <h3
+              class="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-sky-600 transition"
+            >
+              The analysis of the RBL-STEM application in improving student
+              financial literacy
+            </h3>
+            <p class="text-sm text-gray-500 mb-4">Heliyon</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                >STEM Education</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="https://scholar.google.com/citations?user=ffU-LyEAAAAJ&hl=id"
+            class="inline-flex items-center text-sky-600 font-semibold hover:underline"
+          >
+            Lihat Selengkapnya di Google Scholar
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Hubungi Saya</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 mr-4 shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Alamat</h4>
+                <p class="text-gray-600">
+                  Jl. Kalimantan 37 Jember,<br />East Java, Indonesia 68121
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 mr-4 shrink-0"
+              >
+                <i class="fa-solid fa-envelope text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Email</h4>
+                <a
+                  href="mailto:mursyidahindah6@gmail.com"
+                  class="text-gray-600 hover:text-sky-500 transition"
+                >
+                  mursyidahindah6@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 mr-4 shrink-0"
+              >
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Telepon / WhatsApp</h4>
+                <p class="text-gray-600">+62 851-0641-2354</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-sky-50 p-8 rounded-2xl border border-sky-100 flex flex-col justify-center items-center text-center"
+          >
+            <i class="fa-solid fa-university text-5xl text-sky-300 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              PUI-PT Combinatorics and Graph
+            </h3>
+            <p class="text-sm text-gray-600 mb-6">University of Jember</p>
+            <a
+              href="mailto:mursyidahindah6@gmail.com"
+              class="w-full py-2 bg-primary text-white rounded-lg hover:bg-primaryDark transition"
+            >
+              Kirim Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 border-t border-sky-900">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          &copy; 2026 Indah Lutfiyatul Mursyidah. All rights reserved.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-sky-300 transition"
+            ><i class="fa-brands fa-linkedin text-xl"></i
+          ></a>
+          <a href="#" class="text-gray-400 hover:text-sky-300 transition"
+            ><i class="fa-brands fa-researchgate text-xl"></i
+          ></a>
+          <a href="#" class="text-gray-400 hover:text-sky-300 transition"
+            ><i class="fa-solid fa-envelope text-xl"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
